@@ -25,11 +25,11 @@ namespace Animal_0723
 
         //自動実装プロパティでもっと簡単にデータを用意する
         public string Name { set; get; } //動物の名称
-        public string Genre { set; get; } //分類
+        public string Genre { private set; get; } //分類
         public int Age { set; get; } //年齢
-        public string Color { set; get; } //見た目の色
-        public string Special { set; get; } //特徴・特技
-        public string Cry { set; get; }//鳴き声
+        public string Color { private set; get; } //見た目の色
+        public string Special { private set; get; } //特徴・特技
+        public string Cry { private set; get; }//鳴き声
 
 
         //機能（メソッド（関数））
