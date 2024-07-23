@@ -8,6 +8,15 @@ namespace Animal_0723
 {
     internal class Animal　//親クラス、ベースクラス
     {
+
+        static public int count = 0; //何体クラスが実体化されたのかカウント
+
+        //静的フィールドであるcountを確認するための静的メソッド
+        public static void ShowCount()
+        {
+            Console.WriteLine("オブジェクトの生成数は：" + count);
+        }
+
         //クラスが持っている変数（フィールド） ※ 自動実装プロパティがあれば不要
         //private string name; //動物の名称
         //private string genre; //分類
