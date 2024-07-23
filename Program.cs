@@ -21,6 +21,11 @@ namespace Animal_0723
             Animal a4 = new Animal();
             a4.ShowInfo();
 
+            Dog d1 = new Dog();
+            d1.SetSpecial("GetItemメソッドでお宝ゲット！"); //親クラス
+            d1.ShowInfo();　//親クラス
+            d1.GetItem(); //Dogクラスの専用メソッド
+
         }
     }
 }

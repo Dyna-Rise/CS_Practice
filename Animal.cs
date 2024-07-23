@@ -74,7 +74,14 @@ namespace Animal_0723
 
     class Dog : Animal
     {
+        public Dog(int age, string color) : base("犬", "哺乳類", age, color, "ワン！") { } //①実体化の改造 base(Animalクラス)の実体化機能を活用
+        public Dog() : this(0, "不明") { } //② ①の機能を使って、引数なしVer.の実体化メソッドも用意しておく
 
+        //犬だけが持っているスキル：宝探しスキルの発動メソッド
+        public void GetItem()
+        {
+            Console.WriteLine("お宝をゲットしてきた！");
+        }
     }
 
 }
