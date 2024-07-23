@@ -84,4 +84,34 @@ namespace Animal_0723
         }
     }
 
+    class Cat : Animal
+    {
+        //①実体化の改造 base(Animalクラス)の実体化機能を活用
+        public Cat(int age, string color) : base("ネコ", "哺乳類", age, color, "ニャー") { }
+
+        //② ①の機能を使って、引数なしVer.の実体化メソッドも用意しておく
+        public Cat() : this(0, "不明") { }
+
+        //ネコだけが持っているスキル：ハイジャンプスキルの発動メソッド
+        public void Jump()
+        {
+            Console.WriteLine("高くジャンプした！");
+        }
+    }
+
+    class Sparrow : Animal
+    {
+        //①実体化の改造 base(Animalクラス)の実体化機能を活用
+        public Sparrow(int age, string color) : base("スズメ", "鳥類", age, color, "チュンチュン") { }
+
+        //② ①の機能を使って、引数なしVer.の実体化メソッドも用意しておく
+        public Sparrow() : this(0, "不明") { }
+
+        //スズメだけが持っているスキル：さえずるスキルの発動メソッド
+        public void Song()
+        {
+            Console.WriteLine("可愛くさえずった！");
+        }
+    }
+
 }
