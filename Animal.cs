@@ -31,6 +31,19 @@ namespace Animal_0723
         public string Special { private set; get; } //特徴・特技
         public string Cry { private set; get; }//鳴き声
 
+        //コンストラクタ（メソッド）の改造
+        public Animal(string name, string genre, int age, string color, string cry)
+        {
+            Name = name;
+            Genre = genre;
+            Age = age;
+            Color = color;
+            Cry = cry;
+        }
+
+        public Animal() : this("名無し", "不明", 0, "不明", "不明") { }　//改造した本家のコンストラクタを継承して使っている
+
+
 
         //機能（メソッド（関数））
         //フィールドのデータを変更するメソッド
@@ -44,9 +57,14 @@ namespace Animal_0723
         public void ShowInfo()
         {
             Console.WriteLine("名前：" + Name);
+            Console.WriteLine("種類：" + Genre);
             Console.WriteLine("年齢：" + Age);
+            Console.WriteLine("色：" + Color);
+            Console.WriteLine("鳴き声：" + Cry);
+            Console.WriteLine("特技：" + Special);
         }
 
 
     }
+
 }

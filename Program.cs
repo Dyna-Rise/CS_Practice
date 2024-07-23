@@ -10,6 +10,16 @@ namespace Animal_0723
             a1.DataChange("犬", 5);
             a1.ShowInfo();
 
+            Animal a2 = new Animal();
+
+            a2.Name = "ネコ";
+            Console.WriteLine(a2.Name);
+
+            Animal a3 = new Animal("スズメ", "鳥類", 1, "茶色", "チュンチュン");
+
+            Animal a4 = new Animal();
+
+
         }
     }
 }
