@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Animal_0723
 {
-    internal class Animal
+    internal class Animal　//親クラス、ベースクラス
     {
         //クラスが持っている変数（フィールド） ※ 自動実装プロパティがあれば不要
         //private string name; //動物の名称
@@ -64,6 +64,16 @@ namespace Animal_0723
             Console.WriteLine("特技：" + Special);
         }
 
+        //特技を設定するメソッド
+        public void SetSpecial(string special)
+        {
+            Special = special; //Specialプロパティに引数の文字列情報が代入される
+        }
+
+    }
+
+    class Dog : Animal
+    {
 
     }
 

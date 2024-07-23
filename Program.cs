@@ -16,9 +16,10 @@ namespace Animal_0723
             Console.WriteLine(a2.Name);
 
             Animal a3 = new Animal("スズメ", "鳥類", 1, "茶色", "チュンチュン");
+            a3.ShowInfo();
 
             Animal a4 = new Animal();
-
+            a4.ShowInfo();
 
         }
     }
