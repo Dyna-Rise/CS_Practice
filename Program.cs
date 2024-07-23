@@ -8,6 +8,7 @@ namespace Animal_0723
             Animal a1 = new Animal();
 
             a1.DataChange("Œ¢", 5);
+            a1.ShowInfo();
 
         }
     }

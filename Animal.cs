@@ -23,5 +23,19 @@ namespace Animal_0723
             this.name = name;
             this.age = age;
         }
+
+        //フィールドのデータをコンソールに出力するメソッド
+        public void ShowInfo()
+        {
+            Console.WriteLine("名前：" + name);
+            Console.WriteLine("年齢：" + age);
+        }
+
+        //フィールドnameに干渉する専用のプロパティ(メソッド)作り
+        public string Name
+        {
+            set { name = value; }
+            get { return name; }
+        }
     }
 }
